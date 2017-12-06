@@ -1,19 +1,17 @@
-# # anagram checker
-#
-# # simple but not optimal for interviews
-# def anagram(str1, str2):
-#
-#     str1 = str1.replace(' ', '').lower()
-#     str2 = str2.replace(' ', '').lower()
-#
-#     return sorted(str1) == sorted(str2)
-#
-# print anagram('Jake', 'Ross')
-# print anagram('god', 'dog')
-# print anagram('clint eastwood', 'old west action')
+# anagram checker
+# simple but very pythonistic.
+def anagram(str1, str2):
+    str1 = str1.replace(' ', '').lower()
+    str2 = str2.replace(' ', '').lower()
+
+    return sorted(str1) == sorted(str2)
+
+print anagram('Jake', 'Ross')
+print anagram('god', 'dog')
+print anagram('clint eastwood', 'old west action')
 
 
-
+# a more manual approach.
 def anagram_two(str1, str2):
 
     str1 = str1.replace(' ', '').lower()
